@@ -29,7 +29,7 @@ Once a stable release is available, run the following:
 
 ### Initialize config ###
 
-Cattlog requires a cattlog.json config file at the root of the project to know where to scan source, save to file, filter to use etc:
+Cattlog requires a cattlog.json config file at the root of the project to know where to scan source, save to file, adapter to use etc:
 
     ./vendor/bin/cattlog init
 
@@ -41,7 +41,7 @@ dest (string)
 
 This is the destination path from the project root to where the keys are stored. It should include a {lang} which will be replaced by the given language code (e.g. "en").
 
-    "dest": "lang/{en}.php",
+    "dest": "app/translations/{lang}.php",
 
 src (string|array)
 
@@ -69,7 +69,7 @@ This is an array of valid languages that the app provides. If a command (e.g. sc
 
 Will scan source code and find any new or old keys. Doesn't update any files.
 
-./vendor/bin/cattlog scan en
+    ./vendor/bin/cattlog scan en
 
 ### Update ###
 
@@ -95,7 +95,7 @@ Set an existing key value. If a key doesn't exist, run "cattlog update <lang>" t
 
     ./vendor/bin/cattlog set_value en MY_KEY=something
 
-Also, accepts json strings to be set (be sure to use single quotes though in the CLI).
+Also, accepts JSON strings for more complex values (e.g. plurals). Be sure to use single quotes though in the CLI.
 
     ./vendor/bin/cattlog set_value en MY_KEY='["%1$s Comment","%1$s Comments"]'
 
