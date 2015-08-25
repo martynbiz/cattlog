@@ -10,7 +10,7 @@ Still very much in the development stages. To use for now, add the following to 
 
     "repositories": [
         {
-            "url": "https://github.com/martynbiz/cattlog-l5.git",
+            "url": "https://github.com/martynbiz/cattlog.git",
             "type": "git"
         }
     ],
@@ -18,7 +18,7 @@ Still very much in the development stages. To use for now, add the following to 
         .
         .
         .
-        "martynbiz/diff": "dev-master"
+        "martynbiz/martynbiz": "dev-master"
     },
 
 Once a stable release is available, run the following:
