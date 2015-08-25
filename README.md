@@ -91,11 +91,11 @@ Output total number of keys stored for a given language.
 
 ### Setting values ###
 
-Set an existing key value. If a key doesn't exist, run "cattlog update <lang>" to populate empty keys.
+Set an existing key value. If a key doesn't exist, run "cattlog update <lang>" to populate empty keys. Be sure to use single quotes though in the CLI.
 
-    ./vendor/bin/cattlog set_value en MY_KEY='something'
+    ./vendor/bin/cattlog set_value en MY_KEY='something new'
 
-Also, accepts JSON strings for more complex values (e.g. plurals). Be sure to use single quotes though in the CLI.
+Also, accepts JSON strings for more complex values (e.g. plurals).
 
     ./vendor/bin/cattlog set_value en MY_KEY='["%1$s Comment","%1$s Comments"]'
 
