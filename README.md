@@ -2,7 +2,7 @@
 
 ## Introduction ##
 
-A CLI tool for Laravel 5 to manage translation files and syncing entries with view files. Allows translations to be synced with views, get/set values, and list empty values.
+A CLI tool for web applications to sync stored translation keys within source code.
 
 ## Installation ##
 
